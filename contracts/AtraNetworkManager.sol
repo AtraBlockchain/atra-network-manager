@@ -3,7 +3,7 @@ pragma solidity^0.4.20;
     Company: Atra Blockchain Services LLC
     Website: atra.io
     Author: Dillon Vincent
-    Title: Address Delegate Service (ADS)
+    Title: Address Network Manager (ANM)
     Documentation: atra.readthedocs.io
     Date: 4/4/18
 */
@@ -146,7 +146,7 @@ contract AtraNetworkManager is IAtraNetworkManager, AtraOwners {
     }
 
     function NetworksLength() external view returns(uint length){
-        return Networks.length;
+        return (Networks.length);
     }
 
     function NameTaken(string _name) external view returns(bool) {
